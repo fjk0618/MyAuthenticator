@@ -70,9 +70,9 @@ async function onError(event: FormErrorEvent) {
         @error="onError"
       >
         <span className="text-lg xs:text-xl font-semibold uppercase mb-4 mt-2"
-          >Login</span
+          >2FA管理系统</span
         >
-        <UFormField label="Username" size="lg">
+        <UFormField label="用户名" size="lg">
           <UInput
             v-model="state.username"
             placeholder="John"
@@ -82,7 +82,7 @@ async function onError(event: FormErrorEvent) {
             required
           />
         </UFormField>
-        <UFormField label="Password" size="lg">
+        <UFormField label="密码" size="lg">
           <UInput
             v-model="state.password"
             placeholder="password"
@@ -95,7 +95,7 @@ async function onError(event: FormErrorEvent) {
         </UFormField>
         <div class="flex flex-center p-2 relative">
           <UButton :disabled="isLoading" type="submit" variant="soft" size="lg"
-            >submit</UButton
+            >登录</UButton
           >
         </div>
         <USeparator
@@ -110,7 +110,7 @@ async function onError(event: FormErrorEvent) {
           color="primary"
           size="lg"
           @click="loginWithPasskey"
-          >Login with Passkey</UButton
+          >使用Passkey登录</UButton
         >
       </UForm>
     </UCard>

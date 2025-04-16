@@ -75,7 +75,7 @@ async function onError(event: FormErrorEvent) {
         <UFormField label="用户名" size="lg">
           <UInput
             v-model="state.username"
-            placeholder="John"
+            placeholder="请输入用户名"
             icon="i-heroicons-user-circle"
             name="username"
             size="lg"
@@ -85,7 +85,7 @@ async function onError(event: FormErrorEvent) {
         <UFormField label="密码" size="lg">
           <UInput
             v-model="state.password"
-            placeholder="password"
+            placeholder="请输入密码"
             icon="i-heroicons-key"
             name="password"
             type="password"
